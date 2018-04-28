@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>RocK-PapeR-ScissorS</title>
+</head>
+
+<body>
+<!--Title area-->
+<div class="container">
+    <h1 class="text-center"> Rock ~ Paper ~ Scissors </h1>
+</div>
+<!-- although it look at at this time, this not the layout i want but i have to figure out the game play. i have spent way too much time on this for the past days so put it aside-->
+<div></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                <form class="user-form">
+                    <div class="input-group">
+                        <label for="username1" class="sr-only">Player 1 Name</label>
+                        <input id="username1" placeholder="Name" class="form-control" type="text">
+                    </div>
+                        <span class="input-group-btn"><button class="btn btn-success" type="submit" id="submit-name">Join</button></span>
+                </form>
+            </div>
+<br>
+            <div class="container1"> 
+                <div class="row">
+                    <div class="col-md-3" id="DR">
+                            <button id="left-one">
+                                <img src="assets/images/DarkRock.jpg" class="rounded-circle" width="150" height="150" alt="Yoda" title="Yoda" />
+                                    <p>
+                                        <figcaption id="figcap01">ROCK</figcaption>
+                                    </p>    
+                            </button>
+                    </div>
+                    <br>
+                    <div class="col-md-3" id="DP">        
+                            <button id="left-two">
+                                <img src="assets/images/DarkPaper.jpg" class="rounded-circle" width="150" height="150" alt="Solo" title="Solo" />
+                                    <p>
+                                        <figcaption id="figcap01">PAPER</figcaption>
+                                    </p>    
+                            </button>
+                    </div>
+                   <br>
+                    <div class="col-md-3" id="DS">
+                            <button id="left-three">
+                                <img src="assets/images/DarkScissors.jpg" class="rounded-circle" width="150" height="150" alt="Ewok" title="Ewok" />
+                                    <p>
+                                        <figcaption id="figcap01">SCISSORS</figcaption>
+                                    </p>    
+                            </button>
+                    </div> 
+                    <br>
+                </div>  
+                <div class="row chat-row">
+                        <div class="col-md-12">
+                            <div class="chatter">
+                                </div>
+                                    <form class="chat-form">
+                                        <div class="input-group">
+                                            <label for="message" class="sr-only">Chat Now:</label>
+                                            <input id="message" placeholder="Type a message..." class="form-control" type="text">
+                                        </div>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-success" type="submit" id="submit-chat">Send</button>
+                                            </span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+            </div>
+        </div>    
+       <br>
+       <br>   
+       <hr>
+       <hr>
+       <br>
+       <br> 
+        <div class="col-md-6">
+            <div>
+                <form class="user-form">
+                    <div class="input-group">
+                        <label for="username2" class="sr-only">Player 2 Name</label>
+                        <input id="username2" placeholder="Name" class="form-control" type="text">
+                    </div>
+                        <span class="input-group-btn"><button class="btn btn-success" type="submit" id="submit-name">Join</button></span>
+                </form>  
+            </div>
+            <br>
+            <div class="container2">  
+                <div class="row">
+                    <div class="col-md-3" id="LR">
+                        <button id="right-one">
+                            <img src="assets/images/LightRock.jpg" class="rounded-circle" width="150" height="150" alt="Yoda" title="Yoda" />
+                                <p>
+                                    <figcaption id="figcap01">ROCK</figcaption>
+                                </p>    
+                        </button>
+                    </div>
+                    <br>
+                    <div class="col-md-3" id="LP">        
+                        <button id="right-two">
+                            <img src="assets/images/LightPaper.jpg" class="rounded-circle" width="150" height="150" alt="Solo" title="Solo" />
+                                <p>
+                                    <figcaption id="figcap01">PAPER</figcaption>
+                                </p>    
+                        </button>
+                    </div>
+                  <br>
+                    <div class="col-md-3" id="LS">
+                        <button id="right-three">
+                            <img src="assets/images/LightScissors.jpg" class="rounded-circle" width="150" height="150" alt="Ewok" title="Ewok" />
+                                <p>
+                                    <figcaption id="figcap01">SCISSORS</figcaption>
+                                </p>    
+                        </button>
+                    </div>                    
+                </div>
+                <br>
+                <div class="row chat-row">
+                        <div class="col-md-12">
+                            <div class="chatter">
+                                </div>
+                                    <form class="chat-form">
+                                        <div class="input-group">
+                                            <label for="message" class="sr-only">Chat Now:</label>
+                                            <input id="message" placeholder="Type a message..." class="form-control" type="text">
+                                        </div>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-success" type="submit" id="submit-chat">Send</button>
+                                            </span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>            
+ 
+<div class="row chat-row">
+    <div class="col-md-12">
+        <div class="chatter">
+            </div>
+                <form class="chat-form">
+                    <div class="jumbotron">
+                            <div class="container">
+                                <div class="row">
+                                    <h1 class="text-center">Smack Lands Here</h1>
+                                    <br>
+                                <div class="mainArea col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- Firebase think this is where it is supposed to go-->
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

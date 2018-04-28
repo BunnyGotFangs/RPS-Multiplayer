@@ -1,0 +1,19 @@
+body    
+{
+    background-image: url("../images/DarkWP.jpg");
+    background-image: 960px;
+    width:960px;
+    padding:50px;
+    border:20px;
+    margin:20px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+}  
+h1
+{
+    color:white;
+    font: bolder;
+    font-variant: small-caps;
+} 
+
