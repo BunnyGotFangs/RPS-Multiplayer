@@ -35,19 +35,19 @@ $(document).ready(function () {
 //the above makes a connection to the DB, got it, but shouldn;t I need to figure out two connections if two people are playing haven't seen that in class work yet so maybe not
 //define the variables for left side opponent using and array to create a player object
     var LeftPlayer = {
-        PlayerName: '0',
-        PlayerChoice: '',
-        wins: 0,
-        losses: 0,
-        PlayerSmack: ''
+        PlayerName1: '0',
+        PlayerChoice1: '',
+        wins1: 0,
+        losses1: 0,
+        PlayerSmack1: ''
     };
 //define the variables for right side opponent using an array to create a player object   
     var RightPlayer = {
-        PlayerName: '0',
-        PlayerChoice: '',
-        wins: 0,
-        losses: 0,
-        PlayerSmack: ''
+        PlayerName2: '0',
+        PlayerChoice2: '',
+        wins2: 0,
+        losses2: 0,
+        PlayerSmack2: ''
     };
 
 //1. need to set-up the variables in the database by creating a snapshot, so DB can relate to variables
@@ -58,8 +58,41 @@ $(document).ready(function () {
   });
  
 //3. Need an onclick event for capturing Left Player inputs
+$("#submit-name1").on("click", function (event) {
+    // Prevent the page from refreshing
+    event.preventDefault();
+  
+    // Get inputs
+    PlayerName1 = $("#username1").val().trim();
+
+  
+    database.ref().push(player1) ;{
+  
+      playerName1: playerName1
+      
+    
+    };
+
+});
+
+
+
+
 //4. Capture left player values into Firebase 
 //5. Need an onclick event for capturing Right Player input
+$("#submit-name2").on("click", function (event) {
+    // Prevent the page from refreshing
+    event.preventDefault();
+  
+    // Get inputs
+    PlayerName1 = $("#username2").val().trim();
+
+  
+    database.ref().push(player2);{
+  
+      playerName2: playerName2
+      
+    }})
 //6. Capture right player values into Firebase
 //7. Once value are capture display the players choice to screen
 //8. calculate the winner (reference class assignment wk 2/3)
